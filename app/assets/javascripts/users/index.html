@@ -1,0 +1,27 @@
+<form name = "signup" ng-controller="IndexCtrl">
+	<input type = "text"
+	name = "fname"
+	ng-model = "user.fname"
+	placeholder = "First Name" />
+	<br>
+	<br>
+	<input type = "text"
+	name = "lname"
+	ng-model = "user.lname"
+	placeholder = "Last Name" />
+    <br>
+    <br>
+	<input type = "text"
+	name = "age"
+	ng-model= "user.age"
+	placeholder = "Age" />
+	<br>
+	<br>
+	<input type ="text"
+	name ="phone"
+	ng-model ="user.phone"
+	placeholder ="Phone no" />
+	<br>
+	<br>
+	<input type="submit" ng-click="save(user)" value="Save" />
+ </form>
