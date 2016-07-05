@@ -15,4 +15,5 @@ group :development, :test do
   gem 'spring'
 end
 gem "bower-rails", "~> 0.10.0"
+gem 'jsonapi-serializers'
 gem 'mongoid'
