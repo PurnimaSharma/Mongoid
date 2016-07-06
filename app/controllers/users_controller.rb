@@ -19,8 +19,24 @@ class UsersController < ApplicationController
        params.permit(:fname, :lname, :email, :phone)
 	end
 
-  def delete
-    debugger
+  def destroy
+    user= User.find_by( _id: params[:id])
+    user.destroy
+    user.save
+    render :json => {:message => "user deleted", :status => 200 }
   end
 
+  
+  def edit
+    user= User.find_by( _id: params[:id])
+    render :json => {user: JSONAPI::Serializer.serialize(user), :status => 200 }
+  end
+
+  def update
+    user = User.find_by(_id: params[:id])
+    uparams = params.require(:user).permit(:fname,:lname,:email,:phone)
+    user.update_attributes(uparams)
+    render :json => {user: JSONAPI::Serializer.serialize(user), :status => 200 }
+
+  end
 end
