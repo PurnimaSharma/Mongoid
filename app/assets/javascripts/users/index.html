@@ -26,3 +26,16 @@
 	<input type="submit" ng-click="save(user)" value="Save" />
 	<input type="submit" ui-sref="show" value="Show" />
  </form>
+  <div class="content-wrap" ng-init="loadHighcharts();">
+    <div class="row">
+      <div class="col-lg-6">
+        <div id="container" style="height: 400px; margin: 0 auto">
+          <!--<highchart id="chart1" config="chartConfig" style="" class="chart1"></highchart>-->
+          <chart chart-config = "chartConfig"></chart>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+    </div>
+  </div>
+</div>

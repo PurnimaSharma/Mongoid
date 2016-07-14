@@ -1,1 +1,1 @@
-angular.module('myapp', ['ui.router','restangular']);
+angular.module('myapp', ['ui.router','restangular', 'highcharts-ng', 'ngMap']);

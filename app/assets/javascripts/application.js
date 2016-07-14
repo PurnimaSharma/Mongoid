@@ -17,5 +17,7 @@
 //= require lodash/dist/lodash
 //= require restangular/dist/restangular
 //= require angular-flash-alert/dist/angular-flash
+//= require highcharts-ng.js
+//= require ngmap/build/scripts/ng-map.min
 //= require turbolinks
 //= require_tree .

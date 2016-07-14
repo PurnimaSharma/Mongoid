@@ -4,6 +4,8 @@
     "angular": "latest",
     "angular-ui-router": "latest",
     "restangular": "latest",
-    "angular-flash-alert": "latest"
+    "angular-flash-alert": "latest",
+    "highcharts-ng": "latest",
+    "ngmap": "latest"
   }
 }
